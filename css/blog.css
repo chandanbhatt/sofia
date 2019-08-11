@@ -1,0 +1,84 @@
+body{
+    font-family: sans-serif;
+}
+
+.post-row{
+    padding-top: 45px;
+}
+
+.post-row:last-of-type{
+    padding-bottom: 45px;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.post-link:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.post-title{
+    font-size: 14px;
+}
+
+.post-excerpt{
+    font-size: 12px;
+}
+
+.post-meta{
+    font-size: 12px;
+    color: #d2d2d2;
+    transition: all 0.3s ease-in;
+}
+
+.post-link:hover .post-meta{
+    color: #000000;
+}
+
+
+@-webkit-keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@media all and (min-width: 992px){
+    .post-row{
+        padding-top: 60px;
+    }
+}
